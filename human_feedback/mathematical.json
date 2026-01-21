@@ -1,0 +1,29 @@
+{
+  "send_to_llm": true,
+
+  "llm_guidance": {
+    "style": "Prefer symbolic math over numeric guessing",
+    "common_mistakes": [
+      "Conflicting constraints in prompt",
+      "Implicit corrections mid-sentence"
+    ]
+  },
+
+  "dataset_overrides": {
+    "intent": "core mathematical reasoning with edge cases"
+  },
+
+  "row_overrides": {
+    "3": {
+      "expected_output": "Error: conflicting constraints",
+      "note": "SME correction"
+    }
+  },
+
+  "scoring_overrides": {
+    "numeric_tolerance": 0.05
+  },
+
+  "reviewed_by": "SME",
+  "reviewed_on": "2026-01-21"
+}

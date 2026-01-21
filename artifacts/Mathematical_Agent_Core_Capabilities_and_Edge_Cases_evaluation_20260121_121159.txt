@@ -1,0 +1,68 @@
+DATASET NAME : Mathematical Agent Core Capabilities and Edge Cases
+AGENT TYPE   : mathematical
+SCORE        : 0.5
+
+============================================================
+TEST RESULTS
+============================================================
+
+[0]
+PROMPT   : What is 2 + 3?
+EXPECTED : 5
+ACTUAL   : 5
+PASSED   : True
+
+[1]
+PROMPT   : Solve for x: 2x + 5 = 11
+EXPECTED : 3
+ACTUAL   : 3
+PASSED   : True
+
+[2]
+PROMPT   : What is the value of pi?
+EXPECTED : 3.14159
+ACTUAL   : 3.14
+PASSED   : True
+
+[3]
+PROMPT   : 2 + 3 * 4 = ?
+EXPECTED : 14
+ACTUAL   : error: too many values to unpack (expected 2)
+PASSED   : False
+
+[4]
+PROMPT   : Solve for x: x^2 + 4x - 5 = 0
+EXPECTED : -2 or 5/2
+ACTUAL   : error: too many values to unpack (expected 2)
+PASSED   : False
+
+[5]
+PROMPT   : What is the area of a circle with radius 4?
+EXPECTED : 50.265
+ACTUAL   : 50.27
+PASSED   : True
+
+[6]
+PROMPT   : Solve for x: 2x - 3 = 7
+EXPECTED : 5
+ACTUAL   : 5
+PASSED   : True
+
+[7]
+PROMPT   : What is the value of e?
+EXPECTED : 2.71828
+ACTUAL   : error
+PASSED   : False
+
+[8]
+PROMPT   : Solve for x: x^2 - 4x + 3 = 0
+EXPECTED : 1 or 3
+ACTUAL   : error
+PASSED   : False
+
+[9]
+PROMPT   : What is the volume of a cube with side length 5?
+EXPECTED : 125
+ACTUAL   : error
+PASSED   : False
+

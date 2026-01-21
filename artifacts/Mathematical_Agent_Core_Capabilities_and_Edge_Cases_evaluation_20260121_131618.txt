@@ -1,0 +1,68 @@
+DATASET NAME : Mathematical Agent Core Capabilities and Edge Cases
+AGENT TYPE   : mathematical
+SCORE        : 0.4
+
+============================================================
+TEST RESULTS
+============================================================
+
+[0]
+PROMPT   : What is 2 + 3?
+EXPECTED : 5
+ACTUAL   : 5
+PASSED   : True
+
+[1]
+PROMPT   : Solve for x: 2x + 5 = 11
+EXPECTED : Error: insufficient information
+ACTUAL   : 3
+PASSED   : False
+
+[2]
+PROMPT   : What is the area of a circle with radius 4?
+EXPECTED : 50.26548245743669
+ACTUAL   : 50.27
+PASSED   : True
+
+[3]
+PROMPT   : Solve for x: x^2 + 4x - 5 = 0
+EXPECTED : -2 ± √(16)
+ACTUAL   : error: too many values to unpack (expected 2)
+PASSED   : False
+
+[4]
+PROMPT   : What is the volume of a cube with side length 3?
+EXPECTED : 27
+ACTUAL   : error
+PASSED   : False
+
+[5]
+PROMPT   : Solve for x: 2x - 5 = 9
+EXPECTED : 7
+ACTUAL   : 7
+PASSED   : True
+
+[6]
+PROMPT   : What is the surface area of a sphere with radius 3?
+EXPECTED : 56.552793103486
+ACTUAL   : error
+PASSED   : False
+
+[7]
+PROMPT   : Solve for x: x^2 - 4x + 4 = 0
+EXPECTED : Error: insufficient information
+ACTUAL   : error
+PASSED   : True
+
+[8]
+PROMPT   : What is the perimeter of a rectangle with length 6 and width 4?
+EXPECTED : 20
+ACTUAL   : error
+PASSED   : False
+
+[9]
+PROMPT   : Solve for x: 3x + 2 = 11
+EXPECTED : Error: insufficient information
+ACTUAL   : 3
+PASSED   : False
+

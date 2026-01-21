@@ -1,0 +1,68 @@
+DATASET NAME : Mathematical Agent Core Capabilities and Edge Cases
+AGENT TYPE   : mathematical
+SCORE        : 0.1
+
+============================================================
+TEST RESULTS
+============================================================
+
+[0]
+PROMPT   : What is the value of x in the equation 2x + 5 = 11?
+EXPECTED : x = 3
+ACTUAL   : error
+PASSED   : False
+
+[1]
+PROMPT   : Solve for y: 4y - 2 = 16
+EXPECTED : y = 4.5
+ACTUAL   : error
+PASSED   : False
+
+[2]
+PROMPT   : What is the area of a circle with radius 4 cm?
+EXPECTED : πr^2 = 50.27 cm^2
+ACTUAL   : 50.27
+PASSED   : True
+
+[3]
+PROMPT   : Solve the system of equations: x + y = 5 and x - y = 3
+EXPECTED : x = 4, y = 1
+ACTUAL   : error
+PASSED   : False
+
+[4]
+PROMPT   : What is the value of sin(30°)?
+EXPECTED : 0.5
+ACTUAL   : error
+PASSED   : False
+
+[5]
+PROMPT   : Solve for x: 2x^2 + 3x - 1 = 0
+EXPECTED : x = -1/2 or x = 1/2
+ACTUAL   : error: too many values to unpack (expected 2)
+PASSED   : False
+
+[6]
+PROMPT   : What is the volume of a cube with side length 5 cm?
+EXPECTED : 125 cm^3
+ACTUAL   : error
+PASSED   : False
+
+[7]
+PROMPT   : Solve for y: x^2 + y^2 = 25
+EXPECTED : y = ±√(25 - x^2)
+ACTUAL   : error
+PASSED   : False
+
+[8]
+PROMPT   : What is the value of e^x when x = 2?
+EXPECTED : e^2 ≈ 7.389
+ACTUAL   : error
+PASSED   : False
+
+[9]
+PROMPT   : Solve for x: log(x) = 3
+EXPECTED : x = 10^3
+ACTUAL   : error
+PASSED   : False
+

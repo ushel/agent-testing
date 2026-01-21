@@ -1,0 +1,128 @@
+DATASET NAME : Mathematical Agent Core Capabilities and Edge Cases
+AGENT TYPE   : mathematical
+SCORE        : 0.3
+
+======================================================================
+TEST RESULTS (TOOL-AWARE)
+======================================================================
+
+[0]
+PROMPT              : What is 2 + 3?
+EXPECTED OUTPUT     : 5
+ACTUAL OUTPUT       : Error: insufficient information
+EXPECTED TOOLS      : []
+ACTUAL TOOLS        : ['calculator']
+TOOL EXPECTED       : False
+TOOL CALLED         : True
+CORRECT TOOL CALLED : False
+ROW PASSED          : False
+----------------------------------------------------------------------
+
+[1]
+PROMPT              : Solve for x: 2x + 5 = 11
+EXPECTED OUTPUT     : Error: insufficient information
+ACTUAL OUTPUT       : 3
+EXPECTED TOOLS      : ['calculator']
+ACTUAL TOOLS        : ['calculator']
+TOOL EXPECTED       : True
+TOOL CALLED         : True
+CORRECT TOOL CALLED : True
+ROW PASSED          : False
+----------------------------------------------------------------------
+
+[2]
+PROMPT              : Find the area of a circle with radius 4 cm
+EXPECTED OUTPUT     : 50.27
+ACTUAL OUTPUT       : 50.26548245743669
+EXPECTED TOOLS      : []
+ACTUAL TOOLS        : ['calculator']
+TOOL EXPECTED       : False
+TOOL CALLED         : True
+CORRECT TOOL CALLED : False
+ROW PASSED          : False
+----------------------------------------------------------------------
+
+[3]
+PROMPT              : What is the value of x in the equation sin(x) = 0.5?
+EXPECTED OUTPUT     : Error: insufficient information
+ACTUAL OUTPUT       : Error: insufficient information
+EXPECTED TOOLS      : ['calculator']
+ACTUAL TOOLS        : ['calculator']
+TOOL EXPECTED       : True
+TOOL CALLED         : True
+CORRECT TOOL CALLED : True
+ROW PASSED          : True
+----------------------------------------------------------------------
+
+[4]
+PROMPT              : Simplify the expression: (2x^2 + 3x - 1) / (x + 1)
+EXPECTED OUTPUT     : (2x - 1) / (x + 1)
+ACTUAL OUTPUT       : Error: insufficient information
+EXPECTED TOOLS      : []
+ACTUAL TOOLS        : ['calculator']
+TOOL EXPECTED       : False
+TOOL CALLED         : True
+CORRECT TOOL CALLED : False
+ROW PASSED          : False
+----------------------------------------------------------------------
+
+[5]
+PROMPT              : What is the volume of a cube with side length 5 cm?
+EXPECTED OUTPUT     : 125
+ACTUAL OUTPUT       : Error: insufficient information
+EXPECTED TOOLS      : []
+ACTUAL TOOLS        : ['calculator']
+TOOL EXPECTED       : False
+TOOL CALLED         : True
+CORRECT TOOL CALLED : False
+ROW PASSED          : False
+----------------------------------------------------------------------
+
+[6]
+PROMPT              : Solve for x: 2x^2 + 3x - 1 = 0 (using quadratic formula)
+EXPECTED OUTPUT     : Error: insufficient information
+ACTUAL OUTPUT       : Error: insufficient information
+EXPECTED TOOLS      : ['calculator']
+ACTUAL TOOLS        : ['calculator']
+TOOL EXPECTED       : True
+TOOL CALLED         : True
+CORRECT TOOL CALLED : True
+ROW PASSED          : True
+----------------------------------------------------------------------
+
+[7]
+PROMPT              : Find the slope of a line passing through points (2,3) and (4,5)
+EXPECTED OUTPUT     : 1.25
+ACTUAL OUTPUT       : Error: insufficient information
+EXPECTED TOOLS      : []
+ACTUAL TOOLS        : ['calculator']
+TOOL EXPECTED       : False
+TOOL CALLED         : True
+CORRECT TOOL CALLED : False
+ROW PASSED          : False
+----------------------------------------------------------------------
+
+[8]
+PROMPT              : What is the value of x in the equation 2x^2 + 3x - 1 = 0?
+EXPECTED OUTPUT     : -1.5 or 1/2
+ACTUAL OUTPUT       : Error: insufficient information
+EXPECTED TOOLS      : []
+ACTUAL TOOLS        : ['calculator']
+TOOL EXPECTED       : False
+TOOL CALLED         : True
+CORRECT TOOL CALLED : False
+ROW PASSED          : False
+----------------------------------------------------------------------
+
+[9]
+PROMPT              : Solve for x: sin(x) = cos(x)
+EXPECTED OUTPUT     : Error: insufficient information
+ACTUAL OUTPUT       : Error: unsupported query
+EXPECTED TOOLS      : ['calculator']
+ACTUAL TOOLS        : []
+TOOL EXPECTED       : True
+TOOL CALLED         : False
+CORRECT TOOL CALLED : False
+ROW PASSED          : False
+----------------------------------------------------------------------
+

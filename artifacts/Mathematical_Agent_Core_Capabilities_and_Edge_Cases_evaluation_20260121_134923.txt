@@ -1,0 +1,128 @@
+DATASET NAME : Mathematical Agent Core Capabilities and Edge Cases
+AGENT TYPE   : mathematical
+SCORE        : 0.29
+
+======================================================================
+TEST RESULTS (TOOL-AWARE)
+======================================================================
+
+[0]
+PROMPT              : What is 2 + 3?
+EXPECTED OUTPUT     : 5
+ACTUAL OUTPUT       : 5
+EXPECTED TOOLS      : []
+ACTUAL TOOLS        : []
+TOOL EXPECTED       : False
+TOOL CALLED         : False
+CORRECT TOOL CALLED : True
+ROW PASSED          : True
+----------------------------------------------------------------------
+
+[1]
+PROMPT              : Solve for x: 2x + 5 = 11
+EXPECTED OUTPUT     : Error: insufficient information
+ACTUAL OUTPUT       : 3
+EXPECTED TOOLS      : ['calculator']
+ACTUAL TOOLS        : []
+TOOL EXPECTED       : True
+TOOL CALLED         : False
+CORRECT TOOL CALLED : False
+ROW PASSED          : False
+----------------------------------------------------------------------
+
+[2]
+PROMPT              : What is the area of a circle with radius 4?
+EXPECTED OUTPUT     : 50.26548245743669
+ACTUAL OUTPUT       : 50.27
+EXPECTED TOOLS      : []
+ACTUAL TOOLS        : []
+TOOL EXPECTED       : False
+TOOL CALLED         : False
+CORRECT TOOL CALLED : True
+ROW PASSED          : True
+----------------------------------------------------------------------
+
+[3]
+PROMPT              : Solve for x: x^2 + 4x - 5 = 0
+EXPECTED OUTPUT     : -2 ± √(16)
+ACTUAL OUTPUT       : Error: insufficient information
+EXPECTED TOOLS      : ['calculator']
+ACTUAL TOOLS        : []
+TOOL EXPECTED       : True
+TOOL CALLED         : False
+CORRECT TOOL CALLED : False
+ROW PASSED          : False
+----------------------------------------------------------------------
+
+[4]
+PROMPT              : What is the volume of a cube with side length 3?
+EXPECTED OUTPUT     : 27
+ACTUAL OUTPUT       : Error: unsupported query
+EXPECTED TOOLS      : []
+ACTUAL TOOLS        : []
+TOOL EXPECTED       : False
+TOOL CALLED         : False
+CORRECT TOOL CALLED : True
+ROW PASSED          : False
+----------------------------------------------------------------------
+
+[5]
+PROMPT              : Solve for x: 2x - 5 = 11 (ambiguous arithmetic)
+EXPECTED OUTPUT     : Error: ambiguous arithmetic
+ACTUAL OUTPUT       : Error: unsupported query
+EXPECTED TOOLS      : ['calculator']
+ACTUAL TOOLS        : []
+TOOL EXPECTED       : True
+TOOL CALLED         : False
+CORRECT TOOL CALLED : False
+ROW PASSED          : False
+----------------------------------------------------------------------
+
+[6]
+PROMPT              : What is the perimeter of a rectangle with length 4 and width 3?
+EXPECTED OUTPUT     : 14
+ACTUAL OUTPUT       : Error: unsupported query
+EXPECTED TOOLS      : []
+ACTUAL TOOLS        : []
+TOOL EXPECTED       : False
+TOOL CALLED         : False
+CORRECT TOOL CALLED : True
+ROW PASSED          : False
+----------------------------------------------------------------------
+
+[7]
+PROMPT              : Solve for x: x^2 - 4x + 4 = 0 (conflicting constraints)
+EXPECTED OUTPUT     : Error: conflicting constraints
+ACTUAL OUTPUT       : Error: insufficient information
+EXPECTED TOOLS      : ['calculator']
+ACTUAL TOOLS        : []
+TOOL EXPECTED       : True
+TOOL CALLED         : False
+CORRECT TOOL CALLED : False
+ROW PASSED          : False
+----------------------------------------------------------------------
+
+[8]
+PROMPT              : What is the surface area of a sphere with radius 3?
+EXPECTED OUTPUT     : 113.09733552923255
+ACTUAL OUTPUT       : Error: unsupported query
+EXPECTED TOOLS      : []
+ACTUAL TOOLS        : []
+TOOL EXPECTED       : False
+TOOL CALLED         : False
+CORRECT TOOL CALLED : True
+ROW PASSED          : False
+----------------------------------------------------------------------
+
+[9]
+PROMPT              : Solve for x: x^2 + 4x - 5 = 0 (tool required but not explicit)
+EXPECTED OUTPUT     : -2 ± √(16)
+ACTUAL OUTPUT       : Error: insufficient information
+EXPECTED TOOLS      : ['calculator']
+ACTUAL TOOLS        : []
+TOOL EXPECTED       : True
+TOOL CALLED         : False
+CORRECT TOOL CALLED : False
+ROW PASSED          : False
+----------------------------------------------------------------------
+

@@ -1,0 +1,68 @@
+DATASET NAME : Mathematical Agent Core Capabilities and Edge Cases
+AGENT TYPE   : mathematical
+SCORE        : 0.6
+
+============================================================
+TEST RESULTS
+============================================================
+
+[0]
+PROMPT   : What is 2 + 3?
+EXPECTED : 5
+ACTUAL   : 5
+PASSED   : True
+
+[1]
+PROMPT   : Solve for x: 2x + 5 = 11
+EXPECTED : 3
+ACTUAL   : 3
+PASSED   : True
+
+[2]
+PROMPT   : What is the value of pi?
+EXPECTED : 3.14159
+ACTUAL   : 3.14
+PASSED   : True
+
+[3]
+PROMPT   : Solve for x: 2x - 3 = 7, but I don't have a calculator
+EXPECTED : 5
+ACTUAL   : 5
+PASSED   : True
+
+[4]
+PROMPT   : What is the area of a circle with radius 4?
+EXPECTED : 50.26548
+ACTUAL   : 50.27
+PASSED   : True
+
+[5]
+PROMPT   : Solve for x: x^2 + 4x - 5 = 0, but I'm not sure which tool to use
+EXPECTED : -2 or 2.5
+ACTUAL   : error: too many values to unpack (expected 2)
+PASSED   : False
+
+[6]
+PROMPT   : What is the volume of a cube with side length 3?
+EXPECTED : 27
+ACTUAL   : error
+PASSED   : False
+
+[7]
+PROMPT   : Solve for x: 2x + 5 = 11, but I'm not sure if I should use the calculator or not
+EXPECTED : 3
+ACTUAL   : 3
+PASSED   : True
+
+[8]
+PROMPT   : What is the surface area of a sphere with radius 4?
+EXPECTED : 201.06
+ACTUAL   : error
+PASSED   : False
+
+[9]
+PROMPT   : Solve for x: x^2 - 4x + 4 = 0, but I don't have a calculator and I'm not sure which tool to use
+EXPECTED : 2
+ACTUAL   : error
+PASSED   : False
+

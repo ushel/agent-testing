@@ -1,0 +1,68 @@
+DATASET NAME : Mathematical Agent Core Capabilities and Edge Cases
+AGENT TYPE   : mathematical
+SCORE        : 0.3
+
+============================================================
+TEST RESULTS
+============================================================
+
+[0]
+PROMPT   : What is 2 + 3?
+EXPECTED : 5
+ACTUAL   : 5
+PASSED   : True
+
+[1]
+PROMPT   : Solve for x: 2x + 5 = 11
+EXPECTED : 3
+ACTUAL   : 3
+PASSED   : True
+
+[2]
+PROMPT   : Find the area of a circle with radius 4 cm
+EXPECTED : 50.27 cm^2
+ACTUAL   : 50.27
+PASSED   : True
+
+[3]
+PROMPT   : What is the value of x if 2x - 3 = 7?
+EXPECTED : 5
+ACTUAL   : error
+PASSED   : False
+
+[4]
+PROMPT   : Solve for y: 3y + 2 = 14
+EXPECTED : 4
+ACTUAL   : error
+PASSED   : False
+
+[5]
+PROMPT   : What is the volume of a cube with side length 5 cm?
+EXPECTED : 125 cm^3
+ACTUAL   : error
+PASSED   : False
+
+[6]
+PROMPT   : Find the perimeter of a rectangle with length 6 m and width 4 m
+EXPECTED : 20 m
+ACTUAL   : error
+PASSED   : False
+
+[7]
+PROMPT   : Solve for z: z^2 + 5z - 6 = 0
+EXPECTED : -3, 2
+ACTUAL   : error: too many values to unpack (expected 2)
+PASSED   : False
+
+[8]
+PROMPT   : What is the value of x if 2x + 1 = 9?
+EXPECTED : 4
+ACTUAL   : error
+PASSED   : False
+
+[9]
+PROMPT   : Find the surface area of a sphere with radius 3 cm
+EXPECTED : 56.55 cm^2
+ACTUAL   : error
+PASSED   : False
+

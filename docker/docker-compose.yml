@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  supabase-db:
+    image: supabase/postgres:15.1.0.117
+    container_name: supabase-db
+    ports:
+      - "54322:5432"
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    volumes:
+      - supabase_data:/var/lib/postgresql/data
+
+  neo4j:
+    image: neo4j:5.17-community
+    container_name: graphite-neo4j
+    ports:
+      - "7474:7474"   # Browser
+      - "7687:7687"   # Bolt
+    environment:
+      NEO4J_AUTH: neo4j/password
+    volumes:
+      - neo4j_data:/data
+
+volumes:
+  supabase_data:
+  neo4j_data:

@@ -1,0 +1,68 @@
+DATASET NAME : Mathematical Agent Core Capabilities and Edge Cases
+AGENT TYPE   : mathematical
+SCORE        : 0.4
+
+============================================================
+TEST RESULTS
+============================================================
+
+[0]
+PROMPT   : What is 2 + 3?
+EXPECTED : 5
+ACTUAL   : 5
+PASSED   : True
+
+[1]
+PROMPT   : Solve for x: 2x + 5 = 11
+EXPECTED : 3
+ACTUAL   : 3
+PASSED   : True
+
+[2]
+PROMPT   : What is the value of pi?
+EXPECTED : 3.14 (approximate)
+ACTUAL   : 3.14
+PASSED   : False
+
+[3]
+PROMPT   : Solve for x: 2x - 3 = 7
+EXPECTED : 5
+ACTUAL   : 5
+PASSED   : True
+
+[4]
+PROMPT   : What is the area of a circle with radius 4?
+EXPECTED : 50.24 (approximate)
+ACTUAL   : 50.27
+PASSED   : False
+
+[5]
+PROMPT   : Solve for x: x^2 + 4x - 5 = 0
+EXPECTED : -2 or 2.5
+ACTUAL   : error: too many values to unpack (expected 2)
+PASSED   : False
+
+[6]
+PROMPT   : What is the volume of a cube with side length 3?
+EXPECTED : 27
+ACTUAL   : error
+PASSED   : False
+
+[7]
+PROMPT   : Solve for x: 2x + 1 = 9
+EXPECTED : 4
+ACTUAL   : 4
+PASSED   : True
+
+[8]
+PROMPT   : What is the surface area of a sphere with radius 5?
+EXPECTED : 314.16 (approximate)
+ACTUAL   : error
+PASSED   : False
+
+[9]
+PROMPT   : Solve for x: x^2 - 7x + 12 = 0
+EXPECTED : 3 or 4
+ACTUAL   : error
+PASSED   : False
+
